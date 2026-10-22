@@ -1,0 +1,42 @@
+{% extends "__layout.html" %}
+{% block content %}
+
+<h1 class="fw-bold mb测量-4">Меню</h1>
+
+<div class="row g-4" id="catalog-items">
+    {% for item in items %}
+    {% set index = loop.index0 %}
+    <div class="col-md-4">
+        <div class="card shadow-sm border-0 h-100 position-relative">
+            <img src="/static/img/{{ item[1] }}" class="card-img-top" alt="{{ item[0] }}">
+            <div class="card-body text-center d-flex flex-column">
+                <h5 class="card-title mb-2">{{ item[0] }}</h5>
+                <h5 class="card-title text-danger fw-bold mb-0">{{ item[2] }} ₽</h5>
+            </div>
+            <a href="{{ url_for('add_to_cart', item_id=index) }}"
+               class="btn btn-danger rounded-circle position-absolute bottom-0 end-0 m-3 shadow"
+               style="width: 48px; height: 48px; font-size: 28px; display: flex; align-items: center; justify-content: center; text-decoration: none;">
+                +
+            </a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<section class="py-4 mt-5" style="background: #fff3f3;">
+    <div style="max-width: 1200px; margin: 0 auto; text-align: center; padding: 20px 0;">
+        <p class="fw-bold mb-2" style="font-size: 18px;">Спасибо, что выбираете <b>SushIrk</b></p>
+        <p class="mb-1" style="font-size: 15px;">Адрес: г. Иркутск, ул. Примерная, 10</p>
+        <p class="mb-1" style="font-size: 15px;">Телефон: +7 (3952) 123-456</p>
+        <p class="mb-0" style="font-size: 15px;">Email: support@example.com</p>
+    </div>
+</section>
+
+<nav aria-label="Навигация" class="mt-4">
+    <ul class="pagination justify-content-center">
+        <li class="page-item"><a class="page-link" href="/">Главная</a></li>
+        <li class="page-item"><a class="page-link" href="/corzina">Корзина →</a></li>
+    </ul>
+</nav>
+
+{% endblock %}

@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="/">SushIrk</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="menu" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto gap-2">
+                <li class="nav-item">
+                    <a class="nav-link {% if active=='main' %}active{% endif %}" href="/">
+                        Главная
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% if active=='catalog' %}active{% endif %}" href="/catalog">
+                        Меню
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% if active=='corzina' %}active{% endif %}" href="/corzina">
+                        Корзина
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% if active=='support' %}active{% endif %}" href="/support">
+                        Поддержка
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% if active=='author' %}active{% endif %}" href="/author">
+                        Об авторе
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

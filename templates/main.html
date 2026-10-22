@@ -1,0 +1,81 @@
+{% extends "__layout.html" %}
+{% block content %}
+
+<div class="mt-5" style="max-width: 1200px; margin-left: 0; padding-left: 0;">
+
+    <h1 class="fw-bold mb-4">SushIrk</h1>
+    <p class="fw-bold mb-4">Роллы и суши по Иркутску</p>
+
+    <div class="w-100 mb-5">
+        <div id="bigCarousel" class="carousel slide shadow-sm" data-bs-ride="carousel" style="height: 330px;">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/static/img/OIP (1).webp" class="d-block w-100" style="height: 330px; object-fit: cover;">
+                </div>
+                <div class="carousel-item">
+                    <img src="/static/img/OIP (3).webp" class="d-block w-100" style="height: 330px; object-fit: cover;">
+                </div>
+                <div class="carousel-item">
+                    <img src="/static/img/OIP (6).webp" class="d-block w-100" style="height: 330px; object-fit: cover;">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#bigCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#bigCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+
+    <section class="py-5" style="width: 100%; background:#fafafa;">
+        <div style="margin-left: 0; padding-left: 0;"> 
+            <h2 class="fw-bold mb-3">Свежие роллы каждый день</h2>
+
+            <p class="lead mb-4" style="max-width: 900px;">
+                Добро пожаловать в <strong>SushIrk</strong>!  
+                Мы готовим роллы, суши и горячие блюда японской кухни
+                и доставляем по всему Иркутску — быстро, качественно и всегда вкусно.
+            </p>
+
+            <div class="row g-4" style="margin-left: 0;">
+                <div class="col-md-4">
+                    <div class="p-4 shadow-sm bg-white rounded h-100">
+                        <i class="fa-solid fa-truck-fast fa-2x text-danger mb-3"></i>
+                        <h5 class="fw-bold">Быстрая доставка</h5>
+                        <p>Привезем горячее и свежее за 30–50 минут по всему городу.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 shadow-sm bg-white rounded h-100">
+                        <i class="fa-solid fa-fish fa-2x text-danger mb-3"></i>
+                        <h5 class="fw-bold">Свежие ингредиенты</h5>
+                        <p>Продукты ежедневно обновляются. Качество — наш приоритет.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 shadow-sm bg-white rounded h-100">
+                        <i class="fa-solid fa-bowl-food fa-2x text-danger mb-3"></i>
+                        <h5 class="fw-bold">Большие порции</h5>
+                        <p>Щедрые роллы и порции — реально больше, чем у других.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-5 text-center">
+                <a href="/catalog" class="btn btn-danger btn-lg px-5">Перейти в меню</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-4" style="background: #fff3f3;">
+        <div style="max-width: 1200px; margin: 0 auto; text-align: center; border-radius: 8px;">
+            <p class="fw-bold mb-2" style="font-size: 18px;">Спасибо, что выбираете <b>SushIrk</b> ❤️</p>
+            <p class="mb-1" style="font-size: 15px;">Адрес: г. Иркутск, ул. Примерная, 10</p>
+            <p class="mb-1" style="font-size: 15px;">Телефон: +7 (3952) 123-456</p>
+            <p class="mb-0" style="font-size: 15px;">Email: support@example.com</p>
+        </div>
+    </section>
+</div>
+
+{% endblock %}

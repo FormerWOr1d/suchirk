@@ -1,0 +1,91 @@
+{% extends "__layout.html" %}
+{% block content %}
+
+<section class="py-5" style="width: 100%; background: #fafafa;">
+    <div style="max-width: 1200px; margin-left: 0; padding-left: 0;"> 
+
+ 
+        <h1 class="fw-bold mb-4">Поддержка</h1>
+
+
+        <div class="card shadow-sm mb-5 w-100" style="overflow: hidden;">
+            <img src="/static/img/help.png"
+                 style="width: 100%; height: 400px; object-fit: cover;">
+            <div class="p-4" style="text-align: left;">
+                <h4 class="fw-bold mb-2">Мы всегда готовы помочь!</h4>
+                <p class="text-muted mb-0" style="font-size: 16px;">
+                    Найдите ответы на вопросы или свяжитесь с оператором — мы рядом 09:00–23:00 ежедневно.
+                </p>
+            </div>
+        </div>
+
+        <div class="row g-4" style="margin-left: 0;"> 
+            <div class="col-md-4">
+                <div class="p-4 shadow-sm rounded bg-white h-100 text-center">
+                    <i class="fa-solid fa-headset fa-3x text-danger mb-3"></i>
+                    <h5 class="fw-bold">Связаться с нами</h5>
+                    <p class="mb-2" style="font-size: 15px;"><b>Телефоны:</b><br> +7-924-444-44-22<br>+7-902-566-21-21</p>
+                    <p class="mb-0" style="font-size: 15px;"><b>Telegram:</b> @SushIrk</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="p-4 shadow-sm rounded bg-white h-100 text-center">
+                    <i class="fa-solid fa-circle-info fa-3x text-danger mb-3"></i>
+                    <h5 class="fw-bold">Частые вопросы</h5>
+                    <p class="mb-2" style="font-size: 15px;">
+                        • Как оформить заказ?<br>• Как отменить заказ?<br>• Как работает доставка?
+                    </p>
+                    <p class="text-muted mb-0" style="font-size: 15px;">Мы отвечаем быстро и вежливо ❤️</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="p-4 shadow-sm rounded bg-white h-100 text-center">
+                    <i class="fa-solid fa-clock fa-3x text-danger mb-3"></i>
+                    <h5 class="fw-bold">График работы</h5>
+                    <p class="mb-2" style="font-size: 15px;">
+                        <b>Ежедневно:</b><br>09:00 – 23:00
+                    </p>
+                    <p class="mb-0 text-muted" style="font-size: 15px;">Звоните, пишите — всегда рады помочь!</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="py-4" style="background: #fff3f3; margin-top: 40px;">
+    <div style="max-width: 1200px; margin: 0 auto; text-align: center; padding: 20px; border-radius: 8px;">
+        <p class="fw-bold mb-2" style="font-size: 18px;">Спасибо, что выбираете <b>SushIrk</b> ❤️</p>
+        <p class="mb-1" style="font-size: 15px;">Адрес: г. Иркутск, ул. Примерная, 10</p>
+        <p class="mb-1" style="font-size: 15px;">Телефон: +7 (3952) 123-456</p>
+        <p class="mb-0" style="font-size: 15px;">Email: support@example.com</p>
+    </div>
+</section>
+
+<nav aria-label="Навигация по меню" class="mt-4">
+    <ul class="pagination justify-content-center">
+
+        <li class="page-item">
+            <a class="page-link" href="/corzina" aria-label="Назад">
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+        </li>
+
+        <li class="page-item">
+            <a class="page-link" href="/" aria-label="Главная">Главная</a>
+        </li>
+
+        <li class="page-item">
+            <a class="page-link" href="/author" aria-label="Вперёд">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+
+    </ul>
+</nav>
+
+{% endblock %}
+
+

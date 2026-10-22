@@ -1,0 +1,73 @@
+{% extends "__layout.html" %}
+{% block content %}
+
+<h1 class="fw-bold mb-4">Об авторе</h1>
+
+<div class="d-flex flex-column align-items-center">
+
+  <div class="card shadow-sm mb-4 w-100" style="border-radius: 0; max-width: none;">
+    <div class="card-body d-flex align-items-start" style="padding: 20px 40px;">
+
+      <img src="/static/img/avtor.jpg" 
+           alt="Фото автора"
+           class="me-4 rounded"
+           style="width:220px; height:auto; object-fit:cover;">
+
+      <div>
+          <p class="mb-2"><b>Студент группы:</b> ИСТБ-25-1</p>
+          <p class="mb-2"><b>ФИО:</b> Анашкин Данил Сергеевич</p>
+          <p class="mb-2"><b>Автор проекта:</b> «SushIrk»</p>
+          <p class="mb-2"><b>Email:</b> formerwork0@gmail.com</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="card shadow-sm mb-4 w-100" style="border-radius: 0; max-width: none;">
+    <div class="card-body" style="padding: 20px 40px;">
+      <h4 class="fw-bold mb-3">О проекте</h4>
+
+      <p>
+        «SushIrk» — это учебный веб-проект, созданный для курсовой работы,
+        отработки навыков разработки, работы с шаблонами, адаптивной вёрстки
+        и организации структуры сайта.
+      </p>
+
+      <p class="mb-1"><b>Тема работы:</b> «Проектирование и реализация статического многостраничного сайта на тему сеть доставки суши и роллов»</p>
+
+      <p class="fw-bold mt-3 mb-2">Цели работы:</p>
+      <ul>
+        <li>Освоить основы HTML и CSS</li>
+        <li>Научиться создавать многостраничные сайты</li>
+        <li>Реализовать адаптивный дизайн</li>
+        <li>Создать логичную навигацию между страницами</li>
+      </ul>
+
+      <p class="fw-bold mt-3 mb-2">Использованные ссылки:</p>
+      <div>
+          <p class="mb-2"><b>Миниконда:</b><a href="https://docs.conda.io/en/latest/miniconda.html"> cсылка для скачивания</a></p>
+          <p class="mb-2"><b>Значки для оформления: </b><a href="https://fontawesome.com/icons?d=gallery&m=free"> библиотека для значков </a></p>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="card shadow-sm mb-4 w-100" style="border-radius: 0; max-width: none;">
+    <div class="card-body" style="padding: 20px 40px;">
+      <h4 class="fw-bold mb-3">Контактная информация</h4>
+      <p class="mb-1"><b>Учебное заведение:</b> ИРНИТУ – Иркутский национальный исследовательский технический университет</p>
+      <p class="mb-1"><b>Дата создания:</b> 2025г</p>
+    </div>
+  </div>
+
+</div>
+
+<nav aria-label="Навигация" class="mt-4">
+    <ul class="pagination justify-content-center">
+        <li class="page-item"><a class="page-link" href="/support">← Поддержка</a></li> 
+        <li class="page-item"><a class="page-link" href="/">Главная</a></li>
+    </ul>
+</nav>
+
+{% endblock %}
